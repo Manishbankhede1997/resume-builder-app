@@ -1,0 +1,53 @@
+.AvtarBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AvtarBox .MuiAvatar-root {
+  width: 130px;
+  height: 130px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: blue;
+  background-color: lightblue;
+}
+
+.button {
+  margin-bottom: 20px;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Form .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
+  width: 100%;
+}
+
+.Form .MuiTextField-root {
+  width: calc(50% - 10px);
+}
+.nxtButton {
+  display: flex;
+}
+.Next {
+  margin-left: 300px;
+}
+/* Adjust the width and gap as needed for smaller screens */
+@media screen and (max-width: 600px) {
+  .Form .MuiTextField-root {
+    width: 100%;
+  }
+
+  .Form .inputs {
+    gap: 10px;
+  }
+}

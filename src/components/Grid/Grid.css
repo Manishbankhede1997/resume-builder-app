@@ -1,0 +1,11 @@
+.Item {
+  display: flex; /* Use flexbox to arrange the icon and item text on the same line */
+  align-items: center; /* Align items vertically at the center */
+}
+
+/* Styles for the icons */
+.Icons {
+  /* Add your custom styles for the icons here */
+  color: #65a8ff; /* Change the color to a custom color */
+  margin-right: 10px; /* Add margin to the right of the icon */
+}
