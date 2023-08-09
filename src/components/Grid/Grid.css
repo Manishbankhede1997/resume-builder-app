@@ -9,3 +9,11 @@
   color: #65a8ff; /* Change the color to a custom color */
   margin-right: 10px; /* Add margin to the right of the icon */
 }
+.i {
+  color: green;
+  margin-right: 10px;
+}
+.sidebar {
+  padding-top: 40px;
+  padding-left: 20px;
+}

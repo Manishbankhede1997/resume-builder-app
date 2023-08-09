@@ -1,0 +1,100 @@
+/* Template2.css */
+.template-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pdf-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+.gridbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 7px;
+  border-bottom: none;
+}
+
+.paper {
+  padding: 20px;
+}
+
+.header-2 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.avatar-container {
+  margin-right: 20px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+}
+
+.name {
+  font-size: x;
+  word-spacing: 4px;
+  color: green;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.objective {
+  font-size: 16px;
+}
+
+.section {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.header-details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.section-heading {
+  font-size: 18px;
+  color: rgb(235, 93, 117);
+  margin: 0 0 10px;
+  text-align: start;
+  padding: 10px 0px 5px;
+}
+
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  color: pink;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-item {
+  margin-bottom: 5px;
+}
+
+/* Add more specific styling for other sections as needed */

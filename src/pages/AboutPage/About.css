@@ -1,0 +1,109 @@
+.aboutbox {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.heading {
+  padding-left: 20px;
+}
+
+.box-bg {
+  display: flex;
+  gap: 5px;
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 100%;
+}
+.para {
+  width: 50%;
+}
+.box {
+  width: 50%;
+  padding-left: 20rem;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: lightslategray;
+  bottom: 0%;
+  width: 100vw;
+}
+.shareoption {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.shareoption a {
+  color: rgb(128, 15, 0);
+}
+/* 
+.aboutbox {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.box-bg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.para,
+.box {
+  flex-basis: calc(50% - 1rem);
+}
+
+.shareoption {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.shareoption a {
+  color: rgb(128, 15, 0);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightslategray;
+  width: 100%;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutbox {
+    gap: 1rem;
+  }
+
+  .box-bg {
+    padding: 1.5rem;
+  }
+
+  .shareoption {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 2rem;
+  }
+} */

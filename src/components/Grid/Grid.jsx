@@ -23,33 +23,76 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function BasicStack() {
+export default function Sidebar(props) {
   return (
-    <Box>
+    <Box className="sidebar">
       <Stack spacing={1}>
-        <Item className="Item">
+        <Item
+          className="Item"
+          sx={
+            props.click === 0
+              ? { color: "green", backgroundColor: "pink" }
+              : null
+          }
+        >
           <AccountCircleIcon className="Icons" />
           Personal Info
         </Item>
-        <Item className="Item">
+        <Item
+          className="Item"
+          sx={
+            props.click === 1
+              ? { color: "green", backgroundColor: "pink" }
+              : null
+          }
+        >
           <WorkHistoryIcon className="Icons" />
           Work Experience
         </Item>
-        <Item className="Item">
+        <Item
+          className="Item"
+          sx={
+            props.click === 2
+              ? { color: "green", backgroundColor: "pink" }
+              : null
+          }
+        >
           <SchoolIcon className="Icons" />
           Education
         </Item>
-        <Item className="Item">
+        <Item
+          className="Item"
+          sx={
+            props.click === 3
+              ? { color: "green", backgroundColor: "pink" }
+              : null
+          }
+        >
           <StarIcon className="Icons" />
           Key Skill
         </Item>
-        <Item className="Item">
-          <EmojiEventsIcon className="Icons" />
-          Achievements
-        </Item>
-        <Item className="Item">
+
+        <Item
+          className="Item"
+          sx={
+            props.click === 4
+              ? { color: "green", backgroundColor: "pink" }
+              : null
+          }
+        >
           <AnalyticsIcon className="Icons" />
           Project
+        </Item>
+        <Item
+          className="Item"
+          sx={
+            props.click === 5
+              ? { color: "green", backgroundColor: "pink" }
+              : null
+          }
+        >
+          <EmojiEventsIcon className="Icons" />
+          Achievements
         </Item>
       </Stack>
     </Box>

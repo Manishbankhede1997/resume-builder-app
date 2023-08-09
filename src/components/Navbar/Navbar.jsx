@@ -33,16 +33,16 @@ function Navbar() {
 
       {/* Navbar links on the right side */}
       <div className={`navRight ${showMenu ? "show" : ""}`}>
-        {/* Home button with a link to the home page */}
         <Link to={"/"}>
-          <button>Resume Template</button>
+          <button>Resume-Templates</button>
         </Link>
         {/* My Quiz button with a link to the "My Quiz" page */}
         <button>My Resume</button>
 
         {/* Play Quiz button with a link to the "Play Quiz" page */}
-
-        <button>About-us</button>
+        <Link to={"/aboutPage"}>
+          <button>About-us</button>
+        </Link>
       </div>
     </div>
   );

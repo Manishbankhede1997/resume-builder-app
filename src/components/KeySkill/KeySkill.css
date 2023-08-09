@@ -10,9 +10,6 @@
 }
 
 .Form .inputs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
   gap: 20px;
   width: 100%;
 }
