@@ -14,3 +14,13 @@
     align-items: flex-start;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .detailfilling {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 60px 0px;
+    align-items: flex-start;
+  }
+}

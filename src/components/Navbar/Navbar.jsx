@@ -36,9 +36,6 @@ function Navbar() {
         <Link to={"/"}>
           <button>Resume-Templates</button>
         </Link>
-        {/* My Quiz button with a link to the "My Quiz" page */}
-        <button>My Resume</button>
-
         {/* Play Quiz button with a link to the "Play Quiz" page */}
         <Link to={"/aboutPage"}>
           <button>About-us</button>

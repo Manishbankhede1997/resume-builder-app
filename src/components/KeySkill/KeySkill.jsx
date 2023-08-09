@@ -37,7 +37,6 @@ export default function KeySkill(props) {
             marginTop: "40px",
             padding: " 0px 10px 10px",
             height: "auto",
-            width: "50vw",
           },
         }}
       >

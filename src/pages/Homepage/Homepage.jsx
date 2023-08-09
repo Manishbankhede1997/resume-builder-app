@@ -42,7 +42,7 @@ function Homepage() {
 
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Item className="resume">
               <img src="temp1.jpg" alt="resume1" />
               <Button
@@ -54,7 +54,7 @@ function Homepage() {
               </Button>
             </Item>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Item className="resume">
               <img
                 src="https://marketplace.canva.com/EAE8mhdnw_g/2/0/1131w/canva-grey-clean-cv-resume-photo-pIsBixsev8I.jpg"
@@ -69,7 +69,7 @@ function Homepage() {
               </Button>
             </Item>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Item className="resume">
               <img
                 src="https://content.wepik.com/statics/9728507/preview-page0.jpg"

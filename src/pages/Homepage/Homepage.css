@@ -18,3 +18,18 @@
 
   visibility: hidden;
 }
+@media (max-width: 768px) {
+  .MuiButtonBase-root.MuiButton-root.buttons-temp {
+    position: relative;
+    padding: 15px;
+    bottom: 20%;
+    visibility: hidden;
+  }
+  .resume {
+    display: flex;
+    align-items: center;
+  }
+  .resume:hover .MuiButtonBase-root.MuiButton-root.buttons-temp {
+    visibility: visible;
+  }
+}

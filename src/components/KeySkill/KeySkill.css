@@ -23,7 +23,6 @@
 .Addbutton {
   color: black;
 }
-/* Adjust the width and gap as needed for smaller screens */
 @media screen and (max-width: 600px) {
   .Form .MuiTextField-root {
     width: 100%;
