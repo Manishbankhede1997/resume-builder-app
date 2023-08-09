@@ -44,10 +44,7 @@ function Homepage() {
         <Grid container spacing={2}>
           <Grid item xs={4}>
             <Item className="resume">
-              <img
-                src="https://marketplace.canva.com/EAFBL8KRmSA/1/0/1131w/canva-white-simple-student-cv-resume-NXs7xSf0K8I.jpg"
-                alt="resume1"
-              />
+              <img src="temp1.jpg" alt="resume1" />
               <Button
                 variant="contained"
                 className="buttons-temp"
