@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "./Template3.css";
 import Box from "@mui/material/Box";
 import { Button } from "@mui/material";
-import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
-import { styled } from "@mui/material/styles";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import MailLockIcon from "@mui/icons-material/MailLock";
 import HomeIcon from "@mui/icons-material/Home";
@@ -12,14 +10,6 @@ import LanguageIcon from "@mui/icons-material/Language";
 import Divider from "@mui/material/Divider";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "start",
-  color: theme.palette.text.secondary,
-}));
 
 function Template3({
   personalImfo,
@@ -61,7 +51,7 @@ function Template3({
 
   return (
     <div className="template-container">
-      <Paper elevation={3} className="Paper">
+      <div className="Paper">
         <Box className="header-3">
           <div className="avatar-container3">
             <Avatar
@@ -189,7 +179,7 @@ function Template3({
             </div>
           </div>
         </Box>
-      </Paper>
+      </div>
       <Button
         style={{ marginTop: "15px" }}
         variant="contained"

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="http://www.google.com" method="get">
+        <label>Feedback from</label>
+        <input type="text" placeholder="Please add your comment" />
+    </form>
+
+    <h1>Login form</h1>
+    <form action="http://www.google.com" method="get">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter email ID" /> <br /> <br />
+        <label>Password</label>
+        <input type="text" placeholder="Enter password" /><br /> <br />
+        <input type="submit"/>
+        <input type="reset"/>
+    </form> 
+    <h1> new input tags (html5)</h1>
+    <form>
+        <input type="color" value="#00ff00">
+        <input type="date" value="2019-04-15" id="mydate">
+        <input type="number" min="1" max="10" step="0.5" id="mynumber">
+        <br />
+        <input type="range" min="1" max="10" step="0.5" id="mynumber">
+        <input type="search" id="mysearch">
+        <input type="tel" id="myphone" placeholder="xx-xxxx-xxxx" required><br />
+        <input type="url" id="myurl" required>
+
+        <!-- Below is not supported by Firefox, Safari, and Internet Explorer browsers. Currently supported by Chrome, Edge, and Opera browsers. -->
+
+<br/>
+        <input placeholder="datetime" type="datetime-local" id="mydatetime">  
+        <input placeholder="month" type="month" id="mymonth">
+        <input placeholder="time" type="time" id="mytime">
+        <input placeholder="week" type="week" id="myweek">
+
+    </form>
+
+
+</body>
+
+</html>

@@ -6,7 +6,6 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { Button } from "@mui/material";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setTemplateId } from "../../Redux/Actions";
@@ -30,7 +29,6 @@ const Item = styled(Paper)(({ theme }) => ({
 function Homepage() {
   const dispatch = useDispatch();
   const navigation = useNavigate();
-  const [select, setSelect] = useState(1);
   const handleTemp = (templeteId) => {
     dispatch(setTemplateId(templeteId));
     console.log("homeId", templeteId);
@@ -56,10 +54,7 @@ function Homepage() {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Item className="resume">
-              <img
-                src="https://marketplace.canva.com/EAE8mhdnw_g/2/0/1131w/canva-grey-clean-cv-resume-photo-pIsBixsev8I.jpg"
-                alt="resume2"
-              />
+              <img src="temp-2.jpg" alt="resume2" />
               <Button
                 variant="contained"
                 className="buttons-temp"
@@ -71,10 +66,7 @@ function Homepage() {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <Item className="resume">
-              <img
-                src="https://content.wepik.com/statics/9728507/preview-page0.jpg"
-                alt="resume3"
-              />
+              <img src="temp-3.jpg" alt="resume3" />
               <Button
                 variant="contained"
                 className="buttons-temp"

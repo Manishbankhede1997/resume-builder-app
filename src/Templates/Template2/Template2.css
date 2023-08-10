@@ -10,7 +10,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: white;
+  background-color: rgb(133, 131, 131);
 }
 .gridbox {
   display: grid;
@@ -39,16 +39,17 @@
   height: 120px;
 }
 
-.name {
+.name-2 {
   font-size: x;
   word-spacing: 4px;
-  color: green;
+  color: white;
   font-weight: bold;
   letter-spacing: 4px;
 }
 
-.objective {
+.objectives {
   font-size: 16px;
+  color: wheat;
 }
 
 .section {
@@ -64,9 +65,9 @@
   align-items: start;
 }
 
-.section-heading {
+.section-headings {
   font-size: 18px;
-  color: rgb(235, 93, 117);
+  color: white;
   margin: 0 0 10px;
   text-align: start;
   padding: 10px 0px 5px;
@@ -95,6 +96,13 @@
 
 .skill-item {
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  .template-container {
+    width: 130vw;
+    padding: 10px;
+  }
 }
 
 /* Add more specific styling for other sections as needed */

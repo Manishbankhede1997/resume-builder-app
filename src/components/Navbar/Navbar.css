@@ -3,16 +3,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #9c9696;
+  background-color: #a1a3e2;
   color: white;
   position: sticky;
   top: 0;
   z-index: 99;
+  width: 100%;
 }
 
 .navleft {
   display: flex;
   align-items: center;
+}
+.navleft img {
+  height: 35px;
+  width: 150px;
+  border-radius: 10px;
 }
 
 .logoNav {
@@ -25,12 +31,16 @@
 }
 
 button {
-  margin: 0 5px;
+  margin: 0 8px;
   padding: 5px 10px;
   background-color: transparent;
   color: white;
   border: none;
   cursor: pointer;
+  font-size: 20px;
+}
+.resume-btn:hover {
+  color: rgb(209, 63, 99);
 }
 
 /* Add media query for tablets */
@@ -71,9 +81,9 @@ button {
     position: absolute;
     top: 50px;
     right: 0;
-    background-color: #333;
+    background-color: #91c8e2;
     z-index: 1;
-    padding: 10px;
+    padding: 5px;
   }
 
   .show a {
@@ -82,5 +92,70 @@ button {
 
   .show button {
     width: 100%;
+    font-size: 16px;
+  }
+}
+/* Add media query for screens with a maximum width of 400px */
+@media screen and (max-width: 400px) {
+  .navRight {
+    /* Hide the right-side navigation links */
+    display: none;
+  }
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #a1a3e2;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    width: 130vw;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .change:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .change:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Show the menu when the burger is clicked */
+  .show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #91c8e2;
+    z-index: 1;
+    padding: 5px;
+  }
+
+  .show a {
+    margin-bottom: 10px;
+  }
+
+  .show button {
+    width: 100%;
+    font-size: 16px;
   }
 }

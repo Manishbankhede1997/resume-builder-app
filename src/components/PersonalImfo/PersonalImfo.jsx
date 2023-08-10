@@ -71,11 +71,10 @@ export default function PersonalImfo(props) {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "end",
+          justifyContent: "center",
           "& > :not(style)": {
             marginTop: "40px",
             padding: " 0px 10px 10px",
-            height: "auto",
           },
         }}
       >

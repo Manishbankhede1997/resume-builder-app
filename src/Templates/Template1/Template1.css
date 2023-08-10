@@ -7,8 +7,8 @@
 .Paper {
   padding-top: 20px;
 }
-.pdf-container {
-  background-color: whitesmoke;
+.pdf-container1 {
+  background-color: white;
 }
 .header {
   display: flex;
@@ -87,4 +87,10 @@
   position: absolute;
   top: 17vh;
   right: 8%;
+}
+@media screen and (max-width: 400px) {
+  .temp-back {
+    width: 130vw;
+    padding: 10px;
+  }
 }

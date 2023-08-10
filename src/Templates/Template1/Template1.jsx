@@ -2,9 +2,7 @@ import React from "react";
 import "./Template1.css";
 import Box from "@mui/material/Box";
 import { Button } from "@mui/material";
-import Paper from "@mui/material/Paper";
 import Avatar from "@mui/material/Avatar";
-import { styled } from "@mui/material/styles";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import MailLockIcon from "@mui/icons-material/MailLock";
 import HomeIcon from "@mui/icons-material/Home";
@@ -13,13 +11,6 @@ import Divider from "@mui/material/Divider";
 import { useState } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "start",
-  color: theme.palette.text.secondary,
-}));
 
 function Template1({
   personalImfo,
@@ -44,14 +35,7 @@ function Template1({
   } = personalImfo;
 
   const imageURL = img ? URL.createObjectURL(img) : null;
-  // const downloadPDF = () => {
-  //   const doc = new jsPDF("p", "pt", "a4");
-  //   const capture = document.querySelector(".pdf-container");
-  //   doc.html(capture);
-  //   setLoader(true);
-  //   doc.save("receipt.pdf");
-  //   setLoader(false);
-  // };
+
   const downloadPDF = () => {
     const capture = document.querySelector(".pdf-container");
 
@@ -73,7 +57,7 @@ function Template1({
   return (
     <>
       <div className="temp-back">
-        <div className="pdf-container">
+        <div className="pdf-container1">
           <div>
             {/* Add a class for the grid container */}
 

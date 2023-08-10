@@ -61,17 +61,17 @@ function Template2({
               />
             </div>
             <div className="header-details">
-              <h1 className="name">
+              <h1 className="name-2">
                 {firstName} {lastName}
               </h1>
-              <p className="objective">{objective}</p>
+              <p className="objectives">{objective}</p>
             </div>
           </div>
           <Divider />
           <div className="body">
             <div className="gridbox">
               <div className="section">
-                <h3 className="section-heading">PERSONAL DETAILS</h3>
+                <h3 className="section-headings">PERSONAL DETAILS</h3>
                 <div className="icon-list">
                   <div className="icon-item">
                     <AddIcCallIcon className="icon" />
@@ -96,7 +96,7 @@ function Template2({
                 </div>
                 <Divider />
                 <div>
-                  <h3 className="section-heading">SKILLS</h3>
+                  <h3 className="section-headings">SKILLS</h3>
                   {keySkill.map((item, i) => (
                     <ul className="list" key={i}>
                       <li className="skill-item">{item.value}</li>
@@ -105,23 +105,22 @@ function Template2({
                 </div>
                 <Divider />
                 <div>
-                  <h3 className="section-heading">EDUCATION</h3>
+                  <h3 className="section-headings">EDUCATION</h3>
                   {education.map((item, i) => (
                     <ul className="list" key={i}>
                       <li>{item.domain}</li>
-                      <span>{item.degree}</span>
-                      <br />
-                      <span>University - {item.university}</span>
-                      <span>
-                        <br />({item.startyear} - {item.lastYear})
-                      </span>
+                      <li>{item.degree}</li>
+                      <li>University - {item.university}</li>
+                      <li>
+                        ({item.startyear} - {item.lastYear})
+                      </li>
                     </ul>
                   ))}
                 </div>
               </div>
               <div className="section">
                 <div>
-                  <h3 className="section-heading">ACHIEVEMENTS</h3>
+                  <h3 className="section-headings">ACHIEVEMENTS</h3>
                   {achievement.map((item, i) => (
                     <ul className="list" key={i}>
                       <li>{item.value}</li>
@@ -130,7 +129,7 @@ function Template2({
                 </div>
                 <Divider />
                 <div>
-                  <h3 className="section-heading">EXPERIENCE</h3>
+                  <h3 className="section-headings">EXPERIENCE</h3>
                   {workExperience.map((item, i) => (
                     <ul className="list" key={i}>
                       <li>
@@ -147,7 +146,7 @@ function Template2({
                 </div>
                 <Divider />
                 <div>
-                  <h3 className="section-heading">PROJECTS</h3>
+                  <h3 className="section-headings">PROJECTS</h3>
                   {project.map((item, i) => (
                     <ul className="list" key={i}>
                       <li>{item.value}</li>
