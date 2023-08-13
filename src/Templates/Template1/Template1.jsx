@@ -37,8 +37,8 @@ function Template1({
   const imageURL = img ? URL.createObjectURL(img) : null;
 
   const downloadPDF = () => {
-    const capture = document.querySelector(".pdf-container");
-
+    const capture = document.querySelector(".pdf-container1");
+    setLoader(true);
     // Generate an image of the content using html2canvas
     html2canvas(capture).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
@@ -48,7 +48,7 @@ function Template1({
       const width = doc.internal.pageSize.getWidth();
       const height = (canvas.height * width) / canvas.width;
       doc.addImage(imgData, "JPEG", 0, 0, width, height);
-
+      setLoader(false);
       // Save the PDF
       doc.save("resume.pdf");
     });

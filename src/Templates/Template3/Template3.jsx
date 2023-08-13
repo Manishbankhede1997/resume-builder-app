@@ -50,7 +50,7 @@ function Template3({
   };
 
   return (
-    <div className="template-container">
+    <div className="template-container3">
       <div className="Paper">
         <Box className="header-3">
           <div className="avatar-container3">
